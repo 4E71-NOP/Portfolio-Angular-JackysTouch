@@ -1,0 +1,61 @@
+<body class="BlogBody">
+	<div class="ConteneurPrincipal">
+		<div class="blogDivPrincipal text-justify">
+			<div class="blogDivPadding">
+				<div class="blogDivTitre">
+					{{varTitle}}
+					<div class="blogDivTitreImg"></div>
+					<br>
+				</div>
+				<br>
+				<span class="soustitre">Never underestimate Jackys power</span><br>
+				<span style="font-size:14px; color:aliceblue;">
+					FR: Ce projet est un projet d'étudiant et est edité ici pour enrichir un portfolio / 
+					ENG: This project is a student project and is edited here as part of a portfolio<br>
+					cnx : admin/admin
+
+				</span>
+				<div *ngIf="varNexus.AuthentificationOk==1">Bonjour {{varNexus.Utilisateur.prenom}}</div>
+			</div>
+			<div *ngIf="varNexus.Utilisateur.niveau=='Admin';"><app-admin-navbar></app-admin-navbar></div>
+			<div *ngIf="varNexus.AuthentificationOk==0" style="text-align:right;"><button class="boutonRouge" (click)="allerVersAuthentification()">Connexion</button></div>
+
+
+			<br>
+			<app-navbar></app-navbar>
+			<div style="height:768px; overflow-y: auto">
+				<div class="blogDivPadding">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div style="text-align: right">
+				<div class="articleDivFin"></div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="PiedDePage">Faust MARIA DE AREVALO - 2018 - ∞ / Tous droits réservés</div>
+	</div>
+</body>

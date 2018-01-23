@@ -1,0 +1,3 @@
+{ "identifiant":"admin",			"motDePasse":"admin",			"prenom":"Faust",			"nom":"Spingouin",		"niveau":"Admin" }
+{ "identifiant":"Marie-Claire",		"motDePasse":"Marie-Claire",	"prenom":"Marie-Claire",	"nom":"Molusk",			"niveau":"Lecteur" }
+{ "identifiant":"Fabien",			"motDePasse":"Fabien",			"prenom":"Fabien",			"nom":"PetitLutin",		"niveau":"Lecteur" }

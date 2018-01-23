@@ -1,0 +1,26 @@
+<div class="blogDivPrincipal">
+	<br>
+	<br>
+	<table class="tableModificationArticle">
+		<tr>
+			<td>Identifiant</td>
+			<td>
+				<input type="text" [(ngModel)]="credences.identifiant" size="35" [ngModelOptions]="{standalone: true}" placeholder="Votre identifiant">
+			</td>
+		</tr>
+		<tr>
+			<td>Mot de passe</td>
+			<td>
+				<input type="text" [(ngModel)]="credences.motDePasse" size="35" [ngModelOptions]="{standalone: true}"  placeholder="Votre mot de passe">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><button class="boutonRouge" (click)="ControleAthentification()">Connexion</button></td>
+		</tr>
+		<tr>
+				<td colspan="2">{{varMessage}}</td>
+			</tr>
+		</table>
+	<br>
+	<br>
+</div>

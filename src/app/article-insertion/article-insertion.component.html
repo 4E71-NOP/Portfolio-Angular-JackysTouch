@@ -1,0 +1,49 @@
+<h2>Insertion d'un article:</h2>
+
+<div>
+	<form name="nouvelArticle" action="">
+		<div>
+			<table class="tableModificationArticle">
+				<tr>
+					<td>Reference</td>
+					<td>
+						<input type="text" [(ngModel)]="formInsertion.reference" size="35" [ngModelOptions]="{standalone: true}">
+					</td>
+				</tr>
+				<tr>
+					<td>Titre</td>
+					<td>
+						<input type="text" [(ngModel)]="formInsertion.titre" size="100" [ngModelOptions]="{standalone: true}">
+					</td>
+				</tr>
+				<tr>
+					<td>Sous-titre</td>
+					<td>
+						<input type="text" [(ngModel)]="formInsertion.sousTitre" size="35" [ngModelOptions]="{standalone: true}">
+					</td>
+				</tr>
+				<tr>
+					<td>Auteur</td>
+					<td>
+						<input type="text" [(ngModel)]="formInsertion.auteur" size="35" [ngModelOptions]="{standalone: true}">
+					</td>
+				</tr>
+				<tr>
+					<td>Parution</td>
+					<td>
+						<input type="text" [(ngModel)]="formInsertion.parution" size="35" [ngModelOptions]="{standalone: true}">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea cols="80" rows="10" [(ngModel)]="formInsertion.contenu" [ngModelOptions]="{standalone: true}">{{varMongoDBResultat[0].contenu}}</textarea>
+					</td>
+				</tr>
+			</table>
+			<div *ngIf="varNexus.Utilisateur.niveau=='Admin'" class="adminNavbar">
+				<button class="boutonVert" (click)="AllerVersAccueil()">Acceuil</button>
+				<button class="boutonJaune" (click)="Insertion()">Soumettre l'article</button>
+			</div>
+		</div>
+	</form>
+</div>

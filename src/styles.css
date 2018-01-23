@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+
+.BlogBody {
+    font-family: 'Ubuntu Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    background-image: url("./assets/_media/img/body_fond.png"); 
+    background-repeat: repeat;
+}
+
+.ConteneurPrincipal {
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+    border : 0;
+    margin : 0;
+}
+
+/* ---------------------------------------- */
+/* DIV principal							*/
+.blogDivPrincipal {
+    font-family: 'Ubuntu Condensed', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:80%;
+    min-width: 640px;
+	max-width: 1280px;
+	font-size: 20px;
+    margin :2em auto 1em auto;
+    background-color: #f4eeff80;
+    border-radius: 1em;
+    box-shadow: 0px 10px 10px #000000C0;
+    overflow: hidden;
+}
+.blogDivPrincipal a, a:active, a:visited {
+	color :#ffffff;
+	text-decoration: none;
+}
+.blogDivPrincipal a:hover {
+	text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* DIV d'éloignement */
+.blogDivPadding { padding : 1em; }
+
+
+/* ---------------------------------------- */
+/* DIV Titre principal */
+.blogDivTitre {
+    color: #ffffff;
+    background-color: #2a97e0;
+
+    font-family: impact;
+	font-size: 4em;
+	font-weight: bold;
+	font-style: italic;
+
+	text-align: center;
+
+    width:90%;
+    min-width: 512px;
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+    padding: 0.25em;
+
+	overflow: hidden;
+	border : 1px solid #ffffff;
+    border-radius: 1.5em 0 1.5em 0;
+	box-shadow: 0px 10px 10px #00000080;
+	text-shadow: 10px 5px 5px #ffffff80;
+}
+
+.blogDivTitreImg {
+	display : inline-block;
+	background-image: url("./assets/_media/img/titre2.png");
+	width : 188px;
+	height: 78px;
+}
+
+/* ---------------------------------------- */
+/* Article en général */ 
+.titre {
+	font-size: 1.1em;
+}
+
+.soustitreA {
+    font-style: italic;
+	font-size: 0.9em;
+}
+.soustitreB {
+	font-size: 0.7em;
+}
+
+.articleContenu {
+	padding: 0 2em 0 2em;
+	text-align: justify;
+}
+
+.articleDivFin {
+	display : inline-block;
+	background-image: url("./assets/_media/img/findocument2.png");
+	width : 189px;
+	height: 161px;
+}
+
+/* ---------------------------------------- */
+/* Barre d'admin */
+.adminNavbar {
+	text-align: right;
+	background-color: #c00000c0;
+	box-shadow: 0px 8px 3px #00000080;
+	padding: 0.5em;
+}
+
+/* ---------------------------------------- */
+/* Barre de navigation */
+.navbar {
+	top : 10px;
+	color: #ffffff;
+    background-color: #002124;
+	font-family: impact;
+	font-size: 1.1em;
+	font-weight: normal;
+	font-style: italic;
+	width: 100%;
+	padding: 0.25em;
+	border-radius: 0;
+	box-shadow: 0px 8px 3px #00000080;
+}
+
+.navbar a, a:visited, a:active{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 0.5em 0 0.5em;
+}
+
+.navbar a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+/* ---------------------------------------- */
+/* Pied de page */
+.PiedDePage {
+    position: sticky;
+    bottom: 1em;
+    text-align: right;
+    color: #b4b4b4;
+    padding: 0.5em;
+	border-radius: 1.5em 0 1.5em 0;
+	padding: 0.5em 1em 0.5em 1em;
+	background-color: #00000080;
+}
+
+
+/* ---------------------------------------- */
+/* Boutons */
+.boutonVert , .boutonJaune, .boutonBleu, .boutonRouge, .boutonMauve {
+    font-family: 'impact';
+    box-shadow: 0px 2px 3px #00000080;
+	border-radius: 1.5em 0 1.5em 0;
+	padding: 0.5em 1em 0.5em 1em;
+	border: 0.5px solid #ffffff;
+	font-style: italic;
+}
+
+.boutonVert { background-color: #8be02a;	color: #000000;}
+.boutonJaune { background-color: #e0b52a;	color: #000000;}
+.boutonBleu  { background-color: #2a97e0;	color: #ffffff;}
+.boutonRouge { background-color: #e02a2a;	color: #ffffff;}
+.boutonMauve { background-color: #4a1292;	color: #ffffff;}
+
+
+/* ---------------------------------------- */
+/* table Article sous forme de liste*/
+.tableArticleListe table {
+	width:80%; 
+	margin-left:auto; 
+	margin-right:auto;
+	border-spacing: 1em;
+}
+.tableArticleListe tr:hover {
+	background-color: #14c4c440;
+}
+
+.tableArticleListe td {
+	padding: .75em 0.5em .75em 0.5em;
+	border-left: 5px solid #14c4c480;
+	border-bottom: 1px solid #00000080;
+}
+
+/* ---------------------------------------- */
+/* table Article sous forme de liste*/
+.tableModificationArticle {
+		width:80%; 
+		margin-left:auto; 
+		margin-right:auto;
+		border-spacing: 1em;
+}
+
+.tableModificationArticle td {
+	padding: 0.1em 0.25em 0.1em 0.25em;
+}
+
+
+
+/* ---------------------------------------- */
+/*	image									*/
+img {
+	border: 0.5em solid #ffffff;
+	box-shadow: 8px 8px 5px #00000080;
+	width:192px;
+}
+
+/* ---------------------------------------- */
+/* Champs d'insertion						*/
+input, textarea {
+	padding:0.5em;
+	background-color: #ffffff80;
+	color: #000000;
+	margin:0.5em;
+	border: 1px solid #000000;
+}

@@ -1,0 +1,22 @@
+<hr>
+<h3>Liste des publications:</h3>
+<div *ngIf="varNexus.Utilisateur.niveau=='Admin'" class="adminNavbar">
+	<button class="boutonVert" (click)="AllerVersAccueil()">Acceuil</button>
+</div>
+<table class="tableModificationArticle">
+	<tr *ngFor="let t of varMongoDBResultat">
+		<td>{{t.reference}}</td>
+		<td>
+			<a [routerLink]="['/article', t.reference]">{{t.titre}}</a>
+			<br>
+			<span class="soustitre">{{t.sousTitre}}</span> - Par {{t.auteur}} - {{t.parution}}
+			<br>
+		</td>
+		<td>
+			<button class="boutonBleu" (click)="Editer(t.reference)">Editer</button>
+		</td>
+		<td>
+			<button class="boutonRouge" (click)="Suppression(t.reference)">Supprimer</button>
+		</td>
+	</tr>
+</table>

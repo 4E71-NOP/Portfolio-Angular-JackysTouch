@@ -1,0 +1,22 @@
+<span class="soustitreA">Référence article demandée : {{varArticleDemande}}</span><br>
+<br>
+
+<form name="ModificationArticle" action="">
+	<div>
+		<table class="tableModificationArticle">
+			<tr><td>Titre</td>		<td><input type="text" [(ngModel)]="varMongoDBResultat[0].titre"		size="100" [ngModelOptions]="{standalone: true}"></td></tr>
+			<tr><td>Sous-titre</td>	<td><input type="text" [(ngModel)]="varMongoDBResultat[0].sousTitre"	size="35" [ngModelOptions]="{standalone: true}"></td></tr>
+			<tr><td>Auteur</td>		<td><input type="text" [(ngModel)]="varMongoDBResultat[0].auteur"		size="35" [ngModelOptions]="{standalone: true}"></td></tr>
+			<tr><td>Parution</td>	<td><input type="text" [(ngModel)]="varMongoDBResultat[0].parution"		size="35" [ngModelOptions]="{standalone: true}"></td></tr>
+			<tr><td colspan="2"><textarea cols="100" rows="10" [(ngModel)]="varMongoDBResultat[0].contenu" [ngModelOptions]="{standalone: true}">{{varMongoDBResultat[0].contenu}}</textarea></td></tr>
+			</table>
+			<div *ngIf="varNexus.Utilisateur.niveau=='Admin'" class="adminNavbar">
+				<button class="boutonVert" (click)="AllerVersAccueil()" >Acceuil</button>
+				<button class="boutonVert" (click)="AllerVersLecture()">Lire l'article</button>
+				<button class="boutonJaune" (click)="MiseAJour()">Soumettre l'article</button>
+			</div>
+		</div>
+	</form>
+	
+
+	

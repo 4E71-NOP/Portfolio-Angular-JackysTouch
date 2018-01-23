@@ -1,0 +1,14 @@
+
+Aide à l'installation des éléments
+
+*** Linux ***
+mongoimport -d blogfactice -c articles -type json -file [...]bddArticles.json
+mongoimport -d blogfactice -c utilisateurs -type json -file [...]utilisateurs.json
+
+*** Windows ***
+.\mongoimport.exe /d blogfactice /c articles /type json /file [...]bddArticles.json
+.\mongoimport.exe /d blogfactice /c utilisateurs /type json /file [...]utilisateurs.json
+
+cd "c:\Program Files\MongoDB\Server\3.6\bin\"
+mongod.exe
+

@@ -1,0 +1,25 @@
+<span class="soustitreA">Référence article demandée : {{varArticleDemande}}</span>
+<br>
+<br>
+<div *ngFor="let t of varMongoDBResultat">
+	<span class="titre">{{t.titre}}</span>
+	<br>
+	<br>
+	<span class="soustitreA">{{t.sousTitre}}</span>
+	<span class="soustitreA"> - Par "{{t.auteur}}" - {{t.parution}}</span>
+	<br>
+	<br>
+	<p class="articleContenu">
+		{{t.contenu}}
+	</p>
+	<br>
+	<br>
+	<br>
+
+
+	<div *ngIf="varNexus.Utilisateur.niveau=='Admin'" class="adminNavbar">
+		<button class="boutonVert" (click)="AllerVersAccueil()">Acceuil</button>
+		<button class="boutonBleu" (click)="AllerVersEdition(t.reference)">Edition de l'article</button>
+		<button class="boutonRouge" (click)="AllerVersSuppression(t.reference)">Suppression de l'article</button>
+	</div>
+</div>

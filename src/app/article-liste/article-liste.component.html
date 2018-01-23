@@ -1,0 +1,14 @@
+<hr>
+<h3>Liste des publications:</h3>
+<table class="tableArticleListe">
+	<tr *ngFor="let t of varMongoDBResultat">
+		<td>
+			<a [routerLink]="['/article', t.reference]">
+				<span class="titre">{{t.titre}}</span>
+			</a>
+			<br>
+			<span class="soustitreA">{{t.sousTitre}}</span>
+			<span class="soustitreB"> - Par {{t.auteur}} - {{t.parution}}</span>
+		</td>
+	</tr>
+</table>

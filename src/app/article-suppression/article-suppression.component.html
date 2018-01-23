@@ -1,0 +1,7 @@
+<h1>Attention suppression de l'article n°{{varArticleDemande}}</h1>
+<div *ngIf="varNexus.Utilisateur.niveau=='Admin'" class="adminNavbar">
+	<form name="suppressionArticle" action="">
+		<button class="boutonVert" (click)="AllerVersAccueil()">Acceuil</button>
+		<button class="boutonRouge" (click)="Suppression(varArticleDemande)">Suppression de l'article n°{{varArticleDemande}}</button>
+	</form>
+</div>
