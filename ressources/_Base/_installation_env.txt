@@ -1,0 +1,46 @@
+
+Cette petite application requiert l'installation de modules pour fonctionner en local ainsi qu'une petite base sous MongoDB.
+
+-MongoDB
+	Voir le fichier installation BDD.txt pour le détail.
+
+-Nodejs et une CLI Angular
+Les modules suivants sont à installer avec NPM (fourni avec NodeJs).
+	typescript 
+	http-server 
+	cors
+	reflect-metadata zone.js 
+	rxjs 
+	systemjs
+	router
+	forms
+	@angular/core 
+	@angular/compiler 
+	@angular/common 
+	@angular/platform-browser 
+	@angular/platform-browser-dynamic 
+	@types/core-js 
+
+NB: Vous pouvez utiliser le drapeau "-g" éeventuellement. 
+
+et : npm install -g @angular/cli --save
+
+-------------------------------------------------------------------------------
+Recettes utiles en cas de problème: 
+
+Sur Windows:
+-Supprimer le contenu du répertoire c:\Users\<User>\AppData\Roaming\npm et c:\Users\<User>\AppData\Roaming\npm-cache 
+-Retournez dans le répertoire local de l'application: cd /your/application/directory
+-Lancez les installations de modules à nouveau.
+
+-------------------------------------------------------------------------------
+
+Information concernant AOT :
+sur l'exécution de "ng build -prod --aot=false" si le AOT donne des erreurs (Angular 4&5).
+Le principe est que les "templates" sont transformés en classe indépendantes.
+Elles ont donc ont besoin que les déclarations des constructeurs des composants soient publiques.
+Sans quoi ces nouvelles classes ne pourront y accéder...
+
+Référence : 
+https://stackoverflow.com/questions/43141576/property-x-is-private-and-only-accessible-within-class-xyzcomponent/43223934
+
